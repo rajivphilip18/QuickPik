@@ -2,9 +2,9 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 export default function HelpPage() {
   return (
-    <Container className="py-2">
-      <h4 className="mb-2">How to Use QuickPik</h4>
-      <p className="text-muted mb-4">
+    <Container>
+      <h5>How to Use QuickPik</h5>
+      <p className="text-muted">
         QuickPik helps groups reach consensus fast using a matrix-based poll and
         a heatmap visualization. Any logged-in user can both{" "}
         <strong>create</strong> a poll and <strong>participate</strong> in one —
@@ -14,7 +14,7 @@ export default function HelpPage() {
 
       <Row className="g-4">
         <Col md={6}>
-          <Card className="h-100">
+          <Card className="h-80">
             <Card.Header className="bg-primary text-white">
               <strong>For Poll Creators</strong>
             </Card.Header>
@@ -62,7 +62,7 @@ export default function HelpPage() {
         </Col>
 
         <Col md={6}>
-          <Card className="h-100">
+          <Card className="h-80">
             <Card.Header className="bg-success text-white">
               <strong>For Participants</strong>
             </Card.Header>
