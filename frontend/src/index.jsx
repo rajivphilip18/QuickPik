@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import ManagePollPage from "./pages/ManagePollPage";
 import VotePage from "./pages/VotePage";
+import Footer from "./components/Footer";
 
 export default function IndexPage() {
   const [user, setUser] = useState(null);
@@ -74,6 +75,8 @@ export default function IndexPage() {
       {page === "vote" && (
         <VotePage pollId={pageParam} navigate={navigate} user={user} />
       )}
+
+      {user && <Footer />}
     </>
   );
 }
