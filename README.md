@@ -16,7 +16,7 @@ In real-world group decisions — picking a restaurant, scheduling a meeting, pr
 | Resource | Link |
 |---|---|
 | GitHub Repository | https://github.com/alex710joseph/QuickPik |
-| Deployed Application | |
+| Deployed Application | https://quickpik.onrender.com |
 | Youtube Walkthrough | |
 | Design Document | https://docs.google.com/document/d/17_5AJiuvg-Nx1SQw5znsmwMXTlnKDfV8D4nitPJuhyg/edit?usp=sharing |
 | Slide Deck | https://docs.google.com/presentation/d/17xqsvmVP7bAJJ5PQ1Jmx8r3SgIDZGLjNGViHeShNe4w/edit?usp=sharing |
@@ -152,11 +152,14 @@ Thus, QuickPik provides a simple but powerful way for groups to visualize collec
 
 ## GenAI Usage
 
-This project was developed with assistance from **Claude (Anthropic)** via Claude Code, used for:
+This project was developed with assistance from **Claude (Anthropic)** via Claude Code and Claude Sonnet 4.6, used for:
 
 - Scaffolding the Express route structure (`auth`, `polls`, `submissions`)
 - Generating the `VotePage` and `Footer` React components
 - Refining this README
+- Brainstorming the collections required for the application
+- Creating the synthetic data generator python script to create polls with 1000 users
+- Generating the step wise instructions on the help page
 
 All AI-generated code was reviewed, tested, and integrated by the team members.
 
