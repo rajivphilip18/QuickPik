@@ -1,0 +1,2 @@
+# Synthetic Poll Data Generation
+The synthetic_data_generation.py is a simple python script that iterates over all the 1000 users (exported from quickpik's mongo atlas db users table) and creates a poll submission record for each and outputs it as a json (submissions.json)
