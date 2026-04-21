@@ -39,8 +39,9 @@ export default function LoginPage({ onLogin, onGoSignup }) {
               </Alert>
             )}
             <Form.Group className="mb-4">
-              <Form.Label className="fw-500">Username</Form.Label>
+              <Form.Label className="fw-500" for="username">Username</Form.Label>
               <Form.Control
+                id="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleLogin()}
@@ -48,8 +49,9 @@ export default function LoginPage({ onLogin, onGoSignup }) {
               />
             </Form.Group>
             <Form.Group className="mb-4">
-              <Form.Label className="fw-500">Password</Form.Label>
+              <Form.Label className="fw-500" for="password">Password</Form.Label>
               <Form.Control
+                id="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

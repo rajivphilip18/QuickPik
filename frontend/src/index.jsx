@@ -78,35 +78,41 @@ export default function IndexPage() {
         </Navbar>
       )}
 
-      <div className="flex-grow-1">
-        {page === "login" && (
-          <LoginPage
-            onLogin={(u) => {
-              setUser(u);
-              setPage("home");
-            }}
-            onGoSignup={() => setPage("signup")}
-          />
-        )}
-        {page === "signup" && (
-          <SignupPage
-            onSignup={(u) => {
-              if (u) {
+      <main>
+        <div className="flex-grow-1">
+          {page === "login" && (
+            <LoginPage
+              onLogin={(u) => {
                 setUser(u);
                 setPage("home");
-              } else setPage("login");
-            }}
-          />
-        )}
-        {page === "home" && <HomePage navigate={navigate} user={user} />}
-        {page === "manage" && (
-          <ManagePollPage pollId={pageParam} navigate={navigate} user={user} />
-        )}
-        {page === "vote" && (
-          <VotePage pollId={pageParam} navigate={navigate} user={user} />
-        )}
-        {page === "help" && <HelpPage navigate={navigate} />}
-      </div>
+              }}
+              onGoSignup={() => setPage("signup")}
+            />
+          )}
+          {page === "signup" && (
+            <SignupPage
+              onSignup={(u) => {
+                if (u) {
+                  setUser(u);
+                  setPage("home");
+                } else setPage("login");
+              }}
+            />
+          )}
+          {page === "home" && <HomePage navigate={navigate} user={user} />}
+          {page === "manage" && (
+            <ManagePollPage
+              pollId={pageParam}
+              navigate={navigate}
+              user={user}
+            />
+          )}
+          {page === "vote" && (
+            <VotePage pollId={pageParam} navigate={navigate} user={user} />
+          )}
+          {page === "help" && <HelpPage navigate={navigate} />}
+        </div>
+      </main>
 
       {user && <Footer />}
     </div>

@@ -52,7 +52,8 @@ function MatrixGrid({
                     disabled={disabled}
                     className="form-check-input"
                     style={{ pointerEvents: "none", cursor: disabled ? "default" : "pointer" }}
-                  />
+                    aria-label={`${rows[r]}-${columns[c]}`}
+                />
                 </td>
               ))}
             </tr>

@@ -91,16 +91,18 @@ export default function SignupPage({ onSignup }) {
 
             <Row className="g-3 mb-4">
               <Col>
-                <Form.Label className="fw-500">First Name</Form.Label>
+                <Form.Label for="first_name" className="fw-500">First Name</Form.Label>
                 <Form.Control
+                  id="first_name"
                   value={form.first_name}
                   onChange={(e) => updateFirstName(e.target.value)}
                   placeholder="First name"
                 />
               </Col>
               <Col>
-                <Form.Label className="fw-500">Last Name</Form.Label>
+                <Form.Label for="last_name" className="fw-500">Last Name</Form.Label>
                 <Form.Control
+                  id="last_name"
                   value={form.last_name}
                   onChange={(e) => updateLastName(e.target.value)}
                   placeholder="Last name"
@@ -109,8 +111,11 @@ export default function SignupPage({ onSignup }) {
             </Row>
 
             <Form.Group className="mb-4">
-              <Form.Label className="fw-500">Username</Form.Label>
+              <Form.Label for="username" className="fw-500">
+                Username
+              </Form.Label>
               <Form.Control
+                id="username"
                 value={form.username}
                 onChange={(e) => updateUsername(e.target.value)}
                 placeholder="Choose a username"
@@ -118,8 +123,11 @@ export default function SignupPage({ onSignup }) {
             </Form.Group>
 
             <Form.Group className="mb-4">
-              <Form.Label className="fw-500">Password</Form.Label>
+              <Form.Label for="password" className="fw-500">
+                Password
+              </Form.Label>
               <Form.Control
+                id="password"
                 type="password"
                 value={form.password}
                 onChange={(e) => updatePassword(e.target.value)}
