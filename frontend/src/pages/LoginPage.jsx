@@ -9,6 +9,7 @@ import {
   Button,
   Alert,
 } from "react-bootstrap";
+import "./css/LoginPage.css";
 
 export default function LoginPage({ onLogin, onGoSignup }) {
   const [username, setUsername] = useState("");
@@ -31,8 +32,8 @@ export default function LoginPage({ onLogin, onGoSignup }) {
     <Container style={{ minHeight: "100vh" }} className="d-flex align-items-center">
       <Row className="w-100 justify-content-center">
         <Col xs={12} sm={8} md={5} lg={4}>
-          <Card className="p-5 shadow-lg">
-            <h3 className="mb-4 text-center fw-bold">QuickPik Login</h3>
+          <Card className="p-4 shadow-sm custom-card">
+            <h4 className="mb-4 text-center">QuickPik Login</h4>
             {error && (
               <Alert variant="danger" className="py-3 mb-4">
                 {error}
@@ -62,8 +63,8 @@ export default function LoginPage({ onLogin, onGoSignup }) {
             <Button variant="primary" className="w-100 py-2 fw-600 mb-3" size="lg" onClick={handleLogin}>
               Login
             </Button>
-            <Button variant="link" className="w-100 text-decoration-none" onClick={onGoSignup}>
-              Don't have an account? Sign up
+            <Button variant="primary" className="w-100 mt-2" onClick={onGoSignup}>
+              Sign up
             </Button>
           </Card>
         </Col>

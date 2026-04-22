@@ -81,8 +81,8 @@ export default function SignupPage({ onSignup }) {
     <Container style={{ minHeight: "100vh" }} className="d-flex align-items-center">
       <Row className="w-100 justify-content-center">
         <Col xs={12} sm={8} md={5} lg={4}>
-          <Card className="p-5 shadow-lg">
-            <h3 className="mb-4 text-center fw-bold">Create an Account</h3>
+          <Card className="p-4 shadow-sm custom-card">
+            <h4 className="mb-4 text-center">Create an Account</h4>
             {error && (
               <Alert variant="danger" className="py-3 mb-4">
                 {error}
@@ -145,11 +145,10 @@ export default function SignupPage({ onSignup }) {
               Sign Up
             </Button>
             <Button
-              variant="link"
-              className="w-100 text-decoration-none"
+              variant="primary"
+              className="w-100"
               onClick={() => onSignup(null)}
-            >
-              Already have an account? Log in
+            >Log in
             </Button>
           </Card>
         </Col>

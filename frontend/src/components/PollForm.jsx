@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Form, Button, Row, Col, Alert } from "react-bootstrap";
 import PropTypes from 'prop-types';
+import "../pages/css/PollForm.css";
 
 function PollForm({ onSubmit }) {
   const [title, setTitle] = useState("");
@@ -88,7 +89,7 @@ function PollForm({ onSubmit }) {
             {rows.length > 1 && (
               <Col xs="auto">
                 <Button
-                  variant="outline-danger"
+                  variant="danger"
                   size="sm"
                   onClick={() => removeRow(i)}
                 >
@@ -98,7 +99,7 @@ function PollForm({ onSubmit }) {
             )}
           </Row>
         ))}
-        <Button variant="outline-secondary" size="sm" onClick={addRow}>
+        <Button variant="secondary" size="sm" onClick={addRow}>
           + Add Row
         </Button>
       </Form.Group>
@@ -117,7 +118,7 @@ function PollForm({ onSubmit }) {
             {columns.length > 1 && (
               <Col xs="auto">
                 <Button
-                  variant="outline-danger"
+                  variant="danger"
                   size="sm"
                   onClick={() => removeColumn(i)}
                 >
@@ -127,7 +128,7 @@ function PollForm({ onSubmit }) {
             )}
           </Row>
         ))}
-        <Button variant="outline-secondary" size="sm" onClick={addColumn}>
+        <Button variant="secondary" size="sm" onClick={addColumn}>
           + Add Column
         </Button>
       </Form.Group>

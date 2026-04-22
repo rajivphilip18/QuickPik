@@ -170,6 +170,30 @@ A python script was created that iterates over all the 1000 users generated via 
 
 ---
 
+## Accessiblility Tests
+Ran axe scans for all pages of the application and fixed all issues that were found such as:
+1. color contrast of footer text not complying with wcag standards 
+2. aria-label missing for MatrixGrid component
+3. form labels missing for input fields in SignupPage.jsx, LoginPage.jsx and PollForm.jsx
+4. color contrast of copy link and copy button not complying with wcag standards
+
+Generated lighthouse report and fixed the following issues:
+1. main landmark not found - fixed by putting the main content within the `<main><\main>` tags
+
+Axe scans results on all pages after fixing all of the above listed issues:
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 4.09.03 AM.png>)
+
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 4.07.42 AM.png>)
+
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 4.09.03 AM.png>)
+
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 4.09.25 AM.png>)
+
+Lighthouse report after fixing all of the above listed issues:
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 3.54.32 AM.png>)
+
+![alt text](<usability_report_screenshots/Screenshot 2026-04-21 at 4.07.42 AM.png>)
+
 ## Team
 
 - **Alex Joseph** — Matrix Creation & Management

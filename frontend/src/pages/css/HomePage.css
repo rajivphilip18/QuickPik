@@ -1,0 +1,31 @@
+.custom-card.card {
+    background-color: #F2E6D8;
+    border-color: #F2E6D8;
+    border-radius: 15px;
+}
+
+.p {
+    color: #554F4F;
+}
+
+.btn.btn-primary, .btn-danger {
+  background-color: #554F4F;
+  border-color: #554F4F;
+  color: #EDD8B7;
+}
+
+.bg-custom-color {
+  background-color: #C7BDB0;
+}
+
+.btn-primary:hover, .btn-danger:hover {
+  background-color: #C7BDB0;
+  border-color: #C7BDB0;
+  color: #554F4F;
+}
+
+.custom-list-item.list-group-item {
+  background-color: #F2E6D8;
+  border-color: #F2E6D8;
+  color: #554F4F;
+}

@@ -51,7 +51,7 @@ export default function IndexPage() {
   return (
     <div className="d-flex flex-column min-vh-100">
       {user && (
-        <Navbar bg="dark" variant="dark" className="px-3 mb-3">
+        <Navbar className="custom-navbar px-3 mb-3">
           <Navbar.Brand>QuickPik</Navbar.Brand>
           <Navbar.Text className="ms-auto me-3">
             Hi, {user.first_name}

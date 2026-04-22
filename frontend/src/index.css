@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #b3b3b3 0%, #f5f0e8 30%, #ede8d8 60%, #c69d4b 100%);
+  background-color: #EDD8B7;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -241,4 +241,33 @@ a {
 a:hover {
   color: #0b5ed7;
   text-decoration: underline;
+}
+
+.custom-navbar {
+  background-color: #554F4F;
+}
+
+.custom-navbar, .navbar-brand, .navbar-text, .btn-outline-light {
+  color: #EDD8B7;
+  border-color: #EDD8B7;
+}
+
+.custom-navbar .btn-outline-light:hover {
+  background-color: #EDD8B7;
+  color: #554F4F;
+}
+
+.btn-primary, .btn-success {
+  background-color: #554F4F;
+  border-color: #554F4F;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #C7BDB0;
+  border-color: #C7BDB0;
+  color: #554F4F;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #554F4F;
 }

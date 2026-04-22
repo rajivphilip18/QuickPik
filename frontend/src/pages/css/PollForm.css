@@ -1,0 +1,19 @@
+.btn.btn-secondary {
+  background-color: #554F4F;
+  border-color: #554F4F;
+  color: #EDD8B7;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #C7BDB0;
+  border-color: #C7BDB0;
+  color: #554F4F;
+}
+
+.bg-custom-color {
+  background-color: #C7BDB0;
+}
+
+.form-label {
+  color: #554F4F;
+}

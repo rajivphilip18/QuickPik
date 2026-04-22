@@ -12,6 +12,7 @@ import {
   Badge,
 } from "react-bootstrap";
 import PollForm from "../components/PollForm.jsx";
+import "./css/HomePage.css";
 
 export default function HomePage({ navigate }) {
   const [joinId, setJoinId] = useState("");
@@ -57,45 +58,37 @@ export default function HomePage({ navigate }) {
       <h2 className="mb-4 fw-bold">Dashboard</h2>
       <Row className="g-4">
         <Col md={6}>
-          <Card className="p-4 h-80 bg-light shadow-sm">
-            <Card.Header className="bg-primary text-white px-0 pb-2 border-0">
-              <h5 className="mb-0">Create a Poll</h5>
-            </Card.Header>
-            <Card.Body className="px-0 pt-3">
-              <PollForm onSubmit={handleCreatePoll} />
-            </Card.Body>
+          <Card className="p-2 h-80 custom-card">
+            <h5 className="mb-3">Create a Poll</h5>
+            <PollForm onSubmit={handleCreatePoll} />
           </Card>
         </Col>
 
         <Col md={6}>
-          <Card className="p-4 h-80 bg-light shadow-sm">
-            <Card.Header className="bg-success text-white px-0 pb-2 border-0">
-              <h5 className="mb-0">Participate in a Poll</h5>
-            </Card.Header>
-            <Card.Body className="px-0 pt-3">
-              <p className="text-muted mb-3">Enter the Poll ID shared with you:</p>
-              <Form.Control
-                className="mb-3"
-                value={joinId}
-                onChange={(e) => setJoinId(e.target.value)}
-                placeholder="Paste Poll ID here"
-              />
-              {joinError && (
-                <Alert variant="danger" className="py-2 mb-3">
-                  {joinError}
-                </Alert>
-              )}
-              <Button variant="success" className="w-100" onClick={handleJoin}>
-                Join Poll
-              </Button>
-            </Card.Body>
+          <Card className="p-4 h-80 custom-card">
+            <h5 className="mb-3">Participate in a Poll</h5>
+            <p className="text-muted">Enter the Poll ID shared with you:</p>
+            <Form.Control
+              className="mb-2"
+              value={joinId}
+              onChange={(e) => setJoinId(e.target.value)}
+              placeholder="Paste Poll ID here"
+            />
+            {joinError && (
+              <Alert variant="danger" className="py-2 mb-2">
+                {joinError}
+              </Alert>
+            )}
+            <Button variant="primary" className="w-100" onClick={handleJoin}>
+              Join Poll
+            </Button>
           </Card>
         </Col>
       </Row>
 
       <Row className="mt-4">
         <Col className="text-center">
-          <Button variant="outline-primary" onClick={loadMyPolls} size="lg">
+          <Button variant="primary" onClick={loadMyPolls}>
             {showPolls ? "Refresh My Polls" : "View My Created Polls"}
           </Button>
         </Col>
@@ -110,7 +103,7 @@ export default function HomePage({ navigate }) {
             ) : (
               <ListGroup>
                 {myPolls.map((p) => (
-                  <ListGroup.Item className="bg-light" key={p._id}>
+                  <ListGroup.Item className="custom-list-item" key={p._id}>
                     <Row className="align-items-center">
                       <Col>
                         <strong className="h6">{p.title}</strong>
