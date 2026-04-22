@@ -15,11 +15,11 @@ In real-world group decisions — picking a restaurant, scheduling a meeting, pr
 
 | Resource | Link |
 |---|---|
-| GitHub Repository | https://github.com/alex710joseph/QuickPik |
+| GitHub Repository | https://github.com/rajivphilip18/QuickPik |
 | Deployed Application | https://quickpik.onrender.com |
 | Youtube Walkthrough | https://www.youtube.com/watch?v=_WbQWqszsSw |
 | Design Document | https://docs.google.com/document/d/17_5AJiuvg-Nx1SQw5znsmwMXTlnKDfV8D4nitPJuhyg/edit?usp=sharing |
-| Slide Deck | https://docs.google.com/presentation/d/17xqsvmVP7bAJJ5PQ1Jmx8r3SgIDZGLjNGViHeShNe4w/edit?usp=sharing |
+| Slide Deck | https://docs.google.com/presentation/d/1x_tRo3nEKv04ydWoXUd_stG40ioY6O40FLqrr1yNKlI/edit?usp=sharing |
 
 
 ---
