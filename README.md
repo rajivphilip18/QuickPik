@@ -170,6 +170,17 @@ A python script was created that iterates over all the 1000 users generated via 
 
 ---
 
+## Usability Study
+The complete study from both team members merged into single pdf can be found at ./UsabilityStudy_QuickPik.pdf
+
+study links:
+1. https://www.youtube.com/watch?v=WDDjyAOSEk4
+2. https://www.youtube.com/watch?v=wx4p7cg92-I
+3. https://www.youtube.com/watch?v=b6nVG5Vfk50
+4. https://www.youtube.com/watch?v=6xRbWv7X-io&feature=youtu.be
+5. https://www.youtube.com/watch?v=ZJy4GoG4sAI
+6. https://www.youtube.com/watch?v=DCT-N3ynN-0
+
 ## Accessiblility Tests
 Ran axe scans for all pages of the application and fixed all issues that were found such as:
 1. color contrast of footer text not complying with wcag standards 
