@@ -173,7 +173,7 @@ A python script was created that iterates over all the 1000 users generated via 
 ## Usability Study
 The complete study from both team members merged into single pdf can be found at ./UsabilityStudy_QuickPik.pdf
 
-study links:
+study recording links:
 1. https://www.youtube.com/watch?v=WDDjyAOSEk4
 2. https://www.youtube.com/watch?v=wx4p7cg92-I
 3. https://www.youtube.com/watch?v=b6nVG5Vfk50
